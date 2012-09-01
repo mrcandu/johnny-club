@@ -1,0 +1,37 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.onepoundjohnnyclub.com$ [NC]
+RewriteRule ^(.*)$ http://onepoundjohnnyclub.com/$1 [R=301,L]
+
+RewriteRule ^admin$ /admin/ [R]
+RewriteRule ^admin/([^/]+)/([^/]+)/([^/]+)/ /index.php?ctrl1=admin&ctrl2=$1&ctrl3=$2&ctrl4=$3
+RewriteRule ^admin/([^/]+)/([^/]+)/ /index.php?ctrl1=admin&ctrl2=$1&ctrl3=$2
+RewriteRule ^admin/([^/]+)/ /index.php?ctrl1=admin&ctrl2=$1
+RewriteRule ^admin/ /index.php?ctrl1=admin
+
+RewriteRule ^product$ /product/ [R]
+RewriteRule ^product/([^/]+)/ /index.php?ctrl1=product&ctrl2=$1
+RewriteRule ^product/ /index.php?ctrl1=product
+
+RewriteRule ^user$ /user/ [R]
+RewriteRule ^user/([^/]+)/([^/]+)/ /index.php?ctrl1=user&ctrl2=$1&ctrl3=$2
+RewriteRule ^user/([^/]+)/ /index.php?ctrl1=user&ctrl2=$1
+RewriteRule ^user/ /index.php?ctrl1=user
+
+RewriteRule ^purchase$ /purchase/ [R]
+RewriteRule ^purchase/ /index.php?ctrl1=purchase
+
+RewriteRule ^about$ /about/ [R]
+RewriteRule ^about/ /index.php?ctrl1=about
+
+RewriteRule ^contact$ /contact/ [R]
+RewriteRule ^contact/ /index.php?ctrl1=contact
+
+RewriteRule ^terms$ /terms/ [R]
+RewriteRule ^terms/ /index.php?ctrl1=terms
+
+RewriteRule ^delivery$ /delivery/ [R]
+RewriteRule ^delivery/ /index.php?ctrl1=delivery
+
+RewriteRule ^privacy$ /privacy/ [R]
+RewriteRule ^privacy/ /index.php?ctrl1=privacy
+

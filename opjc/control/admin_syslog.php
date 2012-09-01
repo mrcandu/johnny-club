@@ -1,0 +1,17 @@
+<?php 
+$build['model'] = new site();
+$build['form'] = new form(1);
+$build['tmpl'] = new Templater($site_config['path'].'templates/tmpl_admin_syslog.php');
+
+///////////////////////////////////////////////////////////////////////////////Get Data For Form
+//$build['sys_log'] = $build['model']->get_syslog();
+///////////////////////////////////////////////////////////////////////////////Populate Template
+$build['tmpl']->error = $build['error'];
+$build['tmpl']->syslog = $build['model']->get_syslog();
+///////////////////////////////////////////////////////////////////////////////Render The Page
+$page['title'] = "System Log";
+$page['body'] = $build['tmpl']->parse();
+
+///////////////////////////////////////////////////////////////////////////////Tidy Up
+unset($build);
+?>

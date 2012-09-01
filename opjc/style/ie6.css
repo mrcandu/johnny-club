@@ -1,0 +1,16 @@
+img, div {behavior:url(/style/iepngfix.htc);}
+
+#ban_in{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../images/site/banner_back.png',
+sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/site/banner_back.png',sizingMethod='scale')";}
+
+/*
+#user_in{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='../images/site/button_back.png',
+sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/site/button_back.png',sizingMethod='scale')";}
+*/
+
+#user_in{background-image:none;background-color:rgb(58,148,189);}
+.ban_img{display: inline;}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body {margin: 0;padding: 0;font-family: Arial;font-size: 11px;}
+label {display:block;margin:5px 0 0 0;}
+form {padding:0;margin:0;}
+
+input,textarea,select,file{width:100%;font-family: Arial;font-size: 1em;}
+textarea{height:200px;}
+input.btn {width:auto;margin:3px 0 0 0;font-size:0.8em;}
+input.chk {width:auto;margin:0;}
+
+table{border-collapse:collapse;font-size:1em;padding:0;margin:10px 0 0 0;}
+th,td {border: 1px solid #ccc;padding:3px 6px 3px 6px;background-color:#ccc;}
+td{background-color:#fff;}
+
+h1{padding:0;margin:0;}
+h2,h3,h4,h5,h6{font-size:1em;padding:3px 6px 3px 6px;background-color:#bbb;display:block;margin:10px 0 0 0;}
+p{margin:10px 0 0 0;}
+
+.label{width:100px;display:inline-block;margin:3px 0 0 0;}
+
+.mar_20{margin:20px;}
+.pad_20{padding:20px;}
+.pad_10{padding:10px;}
+.top_pad{padding:10px 0 0 0;}
+
+.left{float:left;margin:10px 10px 0 0;background-color:#ddd;}
+.col{float:left;background-color:#ddd;margin:10px 10px 0 0;width:350px;}
+.col_wide2{float:left;background-color:#ddd;margin:10px 0 0 0;width:840px;}
+.col_wide{float:left;background-color:#ddd;margin:10px 10px 0 0;width:600px;}
+.col_full{float:left;background-color:#ddd;margin:10px 10px 0 0;}
+.right{float:right;margin:0 10px 0 0;}
+
+.grey{background-color:#eee;}
+.grey2{background-color:#ddd;}
+.red{color:#f00;}
+
+.mand{font-weight:bold;color:#f00;}
+
+.clear{clear:both;}
+
+/*style the main menu*/
+.menu {margin:0px;padding:0;}
+.menu li {list-style:none;float:left;}
+.menu li a:link, .menu li a:visited, .menu_head {display:block;text-decoration:none;background-color:#ddd;padding: 0.5em 2em;margin:0;border-right: 1px solid #fff;color:#111;}
+.menu li a:hover {background-color:#ccc;}
+
+/*style the sub menu*/
+.menu li ul {position:absolute;visibility:hidden;border-top:1px solid #fff;margin:0;padding:0;}
+.menu li ul li {display:inline;float:none;}
+.menu li ul li a:link, .menu li ul li a:visited {background-color:#ddd;width:auto;}
+.menu li ul li a:hover {background-color:#ccc;}
